@@ -1,0 +1,326 @@
+/* ==========================================================================
+   Typography System
+   ==========================================================================
+   Responsive typography scale using clamp() for fluid sizing
+   ========================================================================== */
+
+/* ========================================
+   Base Typography
+   ======================================== */
+
+body {
+  font-family: var(--font-sans);
+  font-size: var(--text-base);
+  font-weight: var(--font-normal);
+  line-height: var(--leading-relaxed);
+  color: var(--color-text-primary);
+  letter-spacing: var(--tracking-normal);
+}
+
+/* ========================================
+   Headings
+   ======================================== */
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: var(--font-semibold);
+  line-height: var(--leading-tight);
+  color: var(--color-text-primary);
+  letter-spacing: var(--tracking-tight);
+}
+
+h1 {
+  font-size: var(--text-5xl);
+  font-weight: var(--font-bold);
+  letter-spacing: var(--tracking-tighter);
+}
+
+h2 {
+  font-size: var(--text-4xl);
+}
+
+h3 {
+  font-size: var(--text-3xl);
+}
+
+h4 {
+  font-size: var(--text-2xl);
+}
+
+h5 {
+  font-size: var(--text-xl);
+}
+
+h6 {
+  font-size: var(--text-lg);
+}
+
+/* ========================================
+   Paragraphs
+   ======================================== */
+
+p {
+  font-size: var(--text-base);
+  line-height: var(--leading-relaxed);
+  color: var(--color-text-secondary);
+  max-width: 65ch; /* Optimal reading width */
+}
+
+p + p {
+  margin-top: var(--space-4);
+}
+
+/* Lead paragraph */
+.text-lead {
+  font-size: var(--text-lg);
+  line-height: var(--leading-relaxed);
+  color: var(--color-text-secondary);
+}
+
+/* Small text */
+.text-small {
+  font-size: var(--text-sm);
+}
+
+.text-xs {
+  font-size: var(--text-xs);
+}
+
+/* ========================================
+   Links
+   ======================================== */
+
+.text-link {
+  color: var(--color-link);
+  text-decoration: none;
+  font-weight: var(--font-medium);
+  position: relative;
+  transition: color var(--transition-fast);
+}
+
+.text-link::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: var(--color-link);
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform var(--transition-base);
+}
+
+.text-link:hover,
+.text-link:focus {
+  color: var(--color-link-hover);
+}
+
+.text-link:hover::after,
+.text-link:focus::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+/* ========================================
+   Section Headings
+   ======================================== */
+
+.section-heading {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  font-size: var(--text-2xl);
+  font-weight: var(--font-semibold);
+  color: var(--color-text-primary);
+  margin-bottom: var(--space-10);
+}
+
+.section-heading::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(
+    to right,
+    var(--color-border),
+    transparent
+  );
+  max-width: 300px;
+}
+
+.section-heading--centered {
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.section-heading--centered::after {
+  display: none;
+}
+
+.section-number {
+  font-family: var(--font-mono);
+  font-size: var(--text-base);
+  font-weight: var(--font-normal);
+  color: var(--color-accent);
+}
+
+/* ========================================
+   Hero Typography
+   ======================================== */
+
+.hero-greeting {
+  font-size: var(--text-sm);
+  font-weight: var(--font-medium);
+  color: var(--color-accent);
+  text-transform: uppercase;
+  letter-spacing: var(--tracking-wider);
+  margin-bottom: var(--space-4);
+}
+
+.hero-title {
+  font-size: var(--text-4xl);
+  font-weight: var(--font-bold);
+  line-height: var(--leading-tight);
+  color: var(--color-text-primary);
+  margin-bottom: var(--space-6);
+  max-width: 20ch;
+}
+
+.hero-description {
+  font-size: var(--text-base);
+  line-height: var(--leading-relaxed);
+  color: var(--color-text-secondary);
+  max-width: 55ch;
+}
+
+/* ========================================
+   Code & Monospace
+   ======================================== */
+
+code {
+  font-family: var(--font-mono);
+  font-size: 0.875em;
+  background-color: var(--color-surface);
+  padding: var(--space-0-5) var(--space-1-5);
+  border-radius: var(--radius-sm);
+  color: var(--color-accent);
+}
+
+pre {
+  font-family: var(--font-mono);
+  font-size: var(--text-sm);
+  background-color: var(--color-bg-secondary);
+  padding: var(--space-4);
+  border-radius: var(--radius-md);
+  overflow-x: auto;
+}
+
+pre code {
+  background: none;
+  padding: 0;
+}
+
+/* ========================================
+   Lists
+   ======================================== */
+
+.prose ul,
+.prose ol {
+  padding-left: var(--space-6);
+  margin-top: var(--space-4);
+}
+
+.prose ul {
+  list-style-type: disc;
+}
+
+.prose ol {
+  list-style-type: decimal;
+}
+
+.prose li {
+  margin-bottom: var(--space-2);
+  color: var(--color-text-secondary);
+}
+
+/* ========================================
+   Blockquotes
+   ======================================== */
+
+blockquote {
+  border-left: 3px solid var(--color-accent);
+  padding-left: var(--space-4);
+  margin-left: 0;
+  font-style: italic;
+  color: var(--color-text-secondary);
+}
+
+/* ========================================
+   Text Utilities
+   ======================================== */
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-balance {
+  text-wrap: balance;
+}
+
+.text-pretty {
+  text-wrap: pretty;
+}
+
+.text-primary {
+  color: var(--color-text-primary);
+}
+
+.text-secondary {
+  color: var(--color-text-secondary);
+}
+
+.text-tertiary {
+  color: var(--color-text-tertiary);
+}
+
+.text-muted {
+  color: var(--color-text-muted);
+}
+
+.text-accent {
+  color: var(--color-accent);
+}
+
+/* Font weight utilities */
+.font-normal {
+  font-weight: var(--font-normal);
+}
+
+.font-medium {
+  font-weight: var(--font-medium);
+}
+
+.font-semibold {
+  font-weight: var(--font-semibold);
+}
+
+.font-bold {
+  font-weight: var(--font-bold);
+}
+
+/* Font family utilities */
+.font-sans {
+  font-family: var(--font-sans);
+}
+
+.font-mono {
+  font-family: var(--font-mono);
+}
