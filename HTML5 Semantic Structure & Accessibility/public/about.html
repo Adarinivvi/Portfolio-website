@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Unique page title -->
+  <title>About Me | Alex Chen - Full-Stack Developer</title>
+  
+  <!-- Meta description -->
+  <meta name="description" content="Learn about Alex Chen's background, skills, and experience in web development and UI design. Discover my approach to building accessible web experiences.">
+  
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://alexchen.dev/about">
+  
+  <!-- Open Graph -->
+  <meta property="og:type" content="profile">
+  <meta property="og:title" content="About Alex Chen | Full-Stack Developer">
+  <meta property="og:description" content="Learn about my background, skills, and experience in web development and UI design.">
+  <meta property="og:url" content="https://alexchen.dev/about">
+  <meta property="og:site_name" content="Alex Chen Portfolio">
+  <meta property="og:image" content="https://alexchen.dev/images/og-about.jpg">
+  
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="About Alex Chen | Full-Stack Developer">
+  <meta name="twitter:description" content="Learn about my background, skills, and experience in web development and UI design.">
+  
+  <!-- Additional meta -->
+  <meta name="author" content="Alex Chen">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#1a365d" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#1a202c" media="(prefers-color-scheme: dark)">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+  
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "AboutPage",
+    "mainEntity": {
+      "@type": "Person",
+      "name": "Alex Chen",
+      "jobTitle": "Full-Stack Developer & UI Designer",
+      "description": "Full-stack developer with 8+ years of experience creating accessible web applications.",
+      "knowsAbout": ["Web Development", "UI Design", "Accessibility", "JavaScript", "React"],
+      "url": "https://alexchen.dev"
+    }
+  }
+  </script>
+</head>
+<body>
+  <!-- Skip Link -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Header (same structure as home) -->
+  <header class="site-header">
+    <div class="header-container">
+      <a href="index.html" class="site-brand" aria-label="Alex Chen - Home">
+        <span class="brand-icon" aria-hidden="true">AC</span>
+        <span>Alex Chen</span>
+      </a>
+      
+      <nav class="primary-nav" aria-label="Primary navigation">
+        <button 
+          class="nav-toggle" 
+          aria-expanded="false" 
+          aria-controls="nav-menu"
+          aria-label="Toggle navigation menu"
+        >
+          <span class="nav-toggle-icon" aria-hidden="true"></span>
+        </button>
+        
+        <ul id="nav-menu" class="nav-menu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link" aria-current="page">About</a></li>
+          <li><a href="projects.html" class="nav-link">Projects</a></li>
+          <li><a href="blog.html" class="nav-link">Blog</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+        
+        <button class="theme-toggle" aria-label="Switch to dark mode" type="button">
+          <svg class="icon-sun" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="icon-moon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content" tabindex="-1">
+    <!--
+      Breadcrumb Navigation
+      Provides context and navigation hierarchy
+      Uses nav element with aria-label
+    -->
+    <nav class="breadcrumbs container" aria-label="Breadcrumb">
+      <ol class="breadcrumb-list">
+        <li class="breadcrumb-item">
+          <a href="index.html" class="breadcrumb-link">Home</a>
+        </li>
+        <li class="breadcrumb-item">
+          <span class="breadcrumb-current" aria-current="page">About</span>
+        </li>
+      </ol>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="hero" aria-labelledby="page-title">
+      <div class="hero-content">
+        <h1 id="page-title">About Me</h1>
+        <p class="hero-subtitle">
+          Passionate about creating accessible, performant, and beautiful web experiences.
+        </p>
+      </div>
+    </section>
+
+    <!-- Main About Content -->
+    <section class="section" aria-labelledby="story-title">
+      <div class="container">
+        <div class="page-with-sidebar">
+          <div>
+            <h2 id="story-title">My Story</h2>
+            <p>
+              I'm Alex Chen, a full-stack developer and UI designer based in San Francisco. 
+              With over 8 years of experience in web development, I've had the privilege of 
+              working with startups, agencies, and enterprise companies to build digital 
+              products that make a difference.
+            </p>
+            <p>
+              My journey into web development started when I was 15, building fan sites for 
+              my favorite video games. What began as a hobby quickly turned into a passion. 
+              I realized that the web had the power to connect people, share knowledge, and 
+              create meaningful experiences.
+            </p>
+            <p>
+              Today, I specialize in building accessible web applications using modern 
+              technologies like React, Next.js, and Node.js. But what truly sets my work 
+              apart is my commitment to inclusive design. I believe the web should be 
+              accessible to everyone, regardless of their abilities or the devices they use.
+            </p>
+            
+            <h3>My Approach</h3>
+            <p>
+              Every project I work on starts with accessibility in mind. From semantic HTML 
+              structure to keyboard navigation, from color contrast to screen reader support — 
+              these aren't afterthoughts but foundational elements of my development process.
+            </p>
+            <p>
+              I also believe in the power of simplicity. Clean code, clear design, and 
+              straightforward user experiences are at the heart of what I create. 
+              Performance isn't just about fast load times; it's about respecting your 
+              users' time and attention.
+            </p>
+
+            <h3>Beyond Code</h3>
+            <p>
+              When I'm not coding, you can find me contributing to open-source accessibility 
+              tools, mentoring aspiring developers, or exploring the hiking trails around 
+              the Bay Area. I'm also an avid reader and enjoy books on design, psychology, 
+              and technology ethics.
+            </p>
+          </div>
+          
+          <aside class="sidebar" aria-label="Additional information">
+            <!-- Experience Timeline -->
+            <div class="sidebar-section">
+              <h2>Experience</h2>
+              <ul style="list-style: none; padding: 0;">
+                <li style="margin-bottom: var(--space-4); padding-bottom: var(--space-4); border-bottom: 1px solid var(--color-border);">
+                  <strong>Senior Developer</strong>
+                  <br>
+                  <span style="color: var(--color-text-secondary);">TechCorp Inc.</span>
+                  <br>
+                  <time style="font-size: var(--font-size-sm); color: var(--color-text-muted);">2021 - Present</time>
+                </li>
+                <li style="margin-bottom: var(--space-4); padding-bottom: var(--space-4); border-bottom: 1px solid var(--color-border);">
+                  <strong>Full-Stack Developer</strong>
+                  <br>
+                  <span style="color: var(--color-text-secondary);">Digital Agency</span>
+                  <br>
+                  <time style="font-size: var(--font-size-sm); color: var(--color-text-muted);">2018 - 2021</time>
+                </li>
+                <li>
+                  <strong>Frontend Developer</strong>
+                  <br>
+                  <span style="color: var(--color-text-secondary);">StartupXYZ</span>
+                  <br>
+                  <time style="font-size: var(--font-size-sm); color: var(--color-text-muted);">2016 - 2018</time>
+                </li>
+              </ul>
+            </div>
+            
+            <!-- Education -->
+            <div class="sidebar-section">
+              <h2>Education</h2>
+              <p>
+                <strong>B.S. Computer Science</strong>
+                <br>
+                <span style="color: var(--color-text-secondary);">UC Berkeley</span>
+                <br>
+                <time style="font-size: var(--font-size-sm); color: var(--color-text-muted);">2012 - 2016</time>
+              </p>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section" style="background-color: var(--color-surface);" aria-labelledby="skills-title">
+      <div class="container">
+        <header class="section-header">
+          <h2 id="skills-title">Skills & Technologies</h2>
+          <p>The tools and technologies I use to bring ideas to life.</p>
+        </header>
+        
+        <div class="card-grid">
+          <!-- Frontend Skills -->
+          <div class="card">
+            <div class="card-content">
+              <h3 class="card-title">Frontend Development</h3>
+              <ul>
+                <li>HTML5 / Semantic Markup</li>
+                <li>CSS3 / Sass / CSS-in-JS</li>
+                <li>JavaScript / TypeScript</li>
+                <li>React / Next.js / Vue.js</li>
+                <li>Responsive Design</li>
+                <li>Web Animations</li>
+              </ul>
+            </div>
+          </div>
+          
+          <!-- Backend Skills -->
+          <div class="card">
+            <div class="card-content">
+              <h3 class="card-title">Backend Development</h3>
+              <ul>
+                <li>Node.js / Express</li>
+                <li>Python / Django</li>
+                <li>PostgreSQL / MongoDB</li>
+                <li>REST APIs / GraphQL</li>
+                <li>Authentication / Security</li>
+                <li>Cloud Services (AWS, Vercel)</li>
+              </ul>
+            </div>
+          </div>
+          
+          <!-- Accessibility Skills -->
+          <div class="card">
+            <div class="card-content">
+              <h3 class="card-title">Accessibility & UX</h3>
+              <ul>
+                <li>WCAG 2.2 Guidelines</li>
+                <li>Screen Reader Testing</li>
+                <li>Keyboard Navigation</li>
+                <li>ARIA Implementation</li>
+                <li>Color Contrast Analysis</li>
+                <li>Usability Testing</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Values Section -->
+    <section class="section" aria-labelledby="values-title">
+      <div class="container">
+        <header class="section-header">
+          <h2 id="values-title">What I Value</h2>
+          <p>The principles that guide my work.</p>
+        </header>
+        
+        <div class="card-grid">
+          <div class="card">
+            <div class="card-content">
+              <h3 class="card-title">Accessibility First</h3>
+              <p class="card-description">
+                The web should be usable by everyone. I build with accessibility 
+                as a core requirement, not an afterthought.
+              </p>
+            </div>
+          </div>
+          
+          <div class="card">
+            <div class="card-content">
+              <h3 class="card-title">Clean Code</h3>
+              <p class="card-description">
+                Code is read more often than it's written. I prioritize 
+                readability, maintainability, and clear documentation.
+              </p>
+            </div>
+          </div>
+          
+          <div class="card">
+            <div class="card-content">
+              <h3 class="card-title">Continuous Learning</h3>
+              <p class="card-description">
+                Technology evolves rapidly. I stay current through constant 
+                learning and contributing to the developer community.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section" style="background-color: var(--color-primary); color: var(--color-text-inverse);" aria-labelledby="cta-title">
+      <div class="container text-center">
+        <h2 id="cta-title" style="color: inherit;">Want to Work Together?</h2>
+        <p style="color: inherit; opacity: 0.9; max-width: 50ch; margin: 0 auto var(--space-8);">
+          I'm always interested in new projects and opportunities. 
+          Let's discuss how I can help bring your ideas to life.
+        </p>
+        <a href="contact.html" class="btn" style="background-color: var(--color-text-inverse); color: var(--color-primary);">
+          Get In Touch
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-grid">
+        <div class="footer-section">
+          <h2>Alex Chen</h2>
+          <p class="footer-description">
+            Full-stack developer and UI designer creating accessible, 
+            performant web experiences.
+          </p>
+          <div class="social-links">
+            <a href="https://github.com/alexchen" class="social-link" aria-label="GitHub profile (opens in new tab)" target="_blank" rel="noopener noreferrer">
+              <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+              </svg>
+            </a>
+            <a href="https://linkedin.com/in/alexchen" class="social-link" aria-label="LinkedIn profile (opens in new tab)" target="_blank" rel="noopener noreferrer">
+              <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+              </svg>
+            </a>
+            <a href="https://twitter.com/alexchen" class="social-link" aria-label="Twitter profile (opens in new tab)" target="_blank" rel="noopener noreferrer">
+              <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+        
+        <nav class="footer-section" aria-label="Footer navigation">
+          <h2>Navigation</h2>
+          <ul class="footer-nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        
+        <div class="footer-section">
+          <h2>Projects</h2>
+          <ul class="footer-nav">
+            <li><a href="projects.html#ecommerce-platform">E-Commerce Platform</a></li>
+            <li><a href="projects.html#task-management">Task Management</a></li>
+            <li><a href="projects.html#weather-dashboard">Weather Dashboard</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-section">
+          <h2>Contact</h2>
+          <ul class="footer-nav">
+            <li><a href="mailto:hello@alexchen.dev">hello@alexchen.dev</a></li>
+            <li>San Francisco, CA</li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p class="footer-copyright">
+          &copy; <span class="current-year">2024</span> Alex Chen. All rights reserved.
+        </p>
+        <p><a href="#main-content">Back to top</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

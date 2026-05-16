@@ -1,0 +1,14 @@
+{
+  "name": "accessible-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A WCAG 2.2 AA compliant personal portfolio website",
+  "scripts": {
+    "dev": "serve public -l 3000",
+    "build": "echo 'Static site - no build required'",
+    "start": "serve public -l 3000"
+  },
+  "dependencies": {
+    "serve": "^14.2.6"
+  }
+}

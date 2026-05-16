@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Unique page title -->
+  <title>Projects | Alex Chen - Full-Stack Developer Portfolio</title>
+  
+  <!-- Meta description -->
+  <meta name="description" content="Explore Alex Chen's portfolio of web development projects including e-commerce platforms, task management apps, and accessible web applications.">
+  
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://alexchen.dev/projects">
+  
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Projects | Alex Chen Portfolio">
+  <meta property="og:description" content="Explore my portfolio of web development projects including e-commerce platforms and accessible web applications.">
+  <meta property="og:url" content="https://alexchen.dev/projects">
+  <meta property="og:site_name" content="Alex Chen Portfolio">
+  <meta property="og:image" content="https://alexchen.dev/images/og-projects.jpg">
+  
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Projects | Alex Chen Portfolio">
+  <meta name="twitter:description" content="Explore my portfolio of web development projects.">
+  
+  <!-- Additional meta -->
+  <meta name="author" content="Alex Chen">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#1a365d" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#1a202c" media="(prefers-color-scheme: dark)">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+  
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "Alex Chen's Projects",
+    "description": "Portfolio of web development projects",
+    "url": "https://alexchen.dev/projects",
+    "author": {
+      "@type": "Person",
+      "name": "Alex Chen"
+    }
+  }
+  </script>
+</head>
+<body>
+  <!-- Skip Link -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="header-container">
+      <a href="index.html" class="site-brand" aria-label="Alex Chen - Home">
+        <span class="brand-icon" aria-hidden="true">AC</span>
+        <span>Alex Chen</span>
+      </a>
+      
+      <nav class="primary-nav" aria-label="Primary navigation">
+        <button 
+          class="nav-toggle" 
+          aria-expanded="false" 
+          aria-controls="nav-menu"
+          aria-label="Toggle navigation menu"
+        >
+          <span class="nav-toggle-icon" aria-hidden="true"></span>
+        </button>
+        
+        <ul id="nav-menu" class="nav-menu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="projects.html" class="nav-link" aria-current="page">Projects</a></li>
+          <li><a href="blog.html" class="nav-link">Blog</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+        
+        <button class="theme-toggle" aria-label="Switch to dark mode" type="button">
+          <svg class="icon-sun" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="icon-moon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content" tabindex="-1">
+    <!-- Breadcrumb -->
+    <nav class="breadcrumbs container" aria-label="Breadcrumb">
+      <ol class="breadcrumb-list">
+        <li class="breadcrumb-item">
+          <a href="index.html" class="breadcrumb-link">Home</a>
+        </li>
+        <li class="breadcrumb-item">
+          <span class="breadcrumb-current" aria-current="page">Projects</span>
+        </li>
+      </ol>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="hero" aria-labelledby="page-title">
+      <div class="hero-content">
+        <h1 id="page-title">My Projects</h1>
+        <p class="hero-subtitle">
+          A collection of web development projects showcasing my skills in 
+          building accessible, performant, and user-friendly applications.
+        </p>
+      </div>
+    </section>
+
+    <!-- Projects Grid -->
+    <section class="section" aria-labelledby="all-projects-title">
+      <div class="container">
+        <h2 id="all-projects-title" class="sr-only">All Projects</h2>
+        
+        <div class="card-grid">
+          <!--
+            Project 1: E-Commerce Platform
+            Using article with id for anchor links
+          -->
+          <article class="card" id="ecommerce-platform">
+            <div class="card-image">
+              <img 
+                src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 225' fill='%23e2e8f0'%3E%3Crect width='400' height='225'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' fill='%234a5568' font-family='system-ui' font-size='16'%3EE-Commerce Platform%3C/text%3E%3C/svg%3E"
+                alt="E-commerce platform interface showing product grid with filtering options, shopping cart, and checkout process"
+                width="400"
+                height="225"
+                loading="lazy"
+              >
+            </div>
+            <div class="card-content">
+              <h3 class="card-title">E-Commerce Platform</h3>
+              <p class="card-description">
+                A fully accessible online store with advanced product filtering, 
+                shopping cart management, secure checkout process, and admin dashboard. 
+                Built with performance and user experience in mind.
+              </p>
+              <h4 class="sr-only">Technologies used</h4>
+              <div class="tags">
+                <span class="tag">React</span>
+                <span class="tag">Node.js</span>
+                <span class="tag">PostgreSQL</span>
+                <span class="tag">Stripe</span>
+                <span class="tag">Redis</span>
+              </div>
+              <h4 class="sr-only">Project highlights</h4>
+              <ul style="margin-top: var(--space-4); font-size: var(--font-size-sm); color: var(--color-text-secondary);">
+                <li>WCAG 2.2 AA compliant</li>
+                <li>Mobile-first responsive design</li>
+                <li>Server-side rendering for SEO</li>
+                <li>Real-time inventory management</li>
+              </ul>
+              <div style="margin-top: var(--space-4); display: flex; gap: var(--space-4);">
+                <a href="#" class="btn btn-primary btn-sm">View Live Site</a>
+                <a href="#" class="btn btn-secondary btn-sm">View Code</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2: Task Management App -->
+          <article class="card" id="task-management">
+            <div class="card-image">
+              <img 
+                src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 225' fill='%23e2e8f0'%3E%3Crect width='400' height='225'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' fill='%234a5568' font-family='system-ui' font-size='16'%3ETask Management App%3C/text%3E%3C/svg%3E"
+                alt="Task management dashboard with kanban board showing tasks organized by To Do, In Progress, and Done columns"
+                width="400"
+                height="225"
+                loading="lazy"
+              >
+            </div>
+            <div class="card-content">
+              <h3 class="card-title">Task Management App</h3>
+              <p class="card-description">
+                Collaborative project management tool with real-time updates, 
+                drag-and-drop interface, keyboard shortcuts, and team collaboration 
+                features. Designed for productivity and accessibility.
+              </p>
+              <h4 class="sr-only">Technologies used</h4>
+              <div class="tags">
+                <span class="tag">TypeScript</span>
+                <span class="tag">Next.js</span>
+                <span class="tag">Prisma</span>
+                <span class="tag">WebSockets</span>
+                <span class="tag">Tailwind</span>
+              </div>
+              <h4 class="sr-only">Project highlights</h4>
+              <ul style="margin-top: var(--space-4); font-size: var(--font-size-sm); color: var(--color-text-secondary);">
+                <li>Full keyboard navigation support</li>
+                <li>Real-time collaboration</li>
+                <li>Accessible drag-and-drop</li>
+                <li>Dark mode support</li>
+              </ul>
+              <div style="margin-top: var(--space-4); display: flex; gap: var(--space-4);">
+                <a href="#" class="btn btn-primary btn-sm">View Live Site</a>
+                <a href="#" class="btn btn-secondary btn-sm">View Code</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3: Weather Dashboard -->
+          <article class="card" id="weather-dashboard">
+            <div class="card-image">
+              <img 
+                src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 225' fill='%23e2e8f0'%3E%3Crect width='400' height='225'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' fill='%234a5568' font-family='system-ui' font-size='16'%3EWeather Dashboard%3C/text%3E%3C/svg%3E"
+                alt="Weather dashboard displaying current conditions including temperature, humidity, and 7-day forecast with temperature graphs"
+                width="400"
+                height="225"
+                loading="lazy"
+              >
+            </div>
+            <div class="card-content">
+              <h3 class="card-title">Weather Dashboard</h3>
+              <p class="card-description">
+                Real-time weather application with location-based forecasts, 
+                interactive maps, historical data charts, and severe weather alerts. 
+                Built with accessibility-first design principles.
+              </p>
+              <h4 class="sr-only">Technologies used</h4>
+              <div class="tags">
+                <span class="tag">Vue.js</span>
+                <span class="tag">OpenWeather API</span>
+                <span class="tag">Chart.js</span>
+                <span class="tag">Mapbox</span>
+              </div>
+              <h4 class="sr-only">Project highlights</h4>
+              <ul style="margin-top: var(--space-4); font-size: var(--font-size-sm); color: var(--color-text-secondary);">
+                <li>Accessible data visualizations</li>
+                <li>Geolocation support</li>
+                <li>Offline capability (PWA)</li>
+                <li>Multiple language support</li>
+              </ul>
+              <div style="margin-top: var(--space-4); display: flex; gap: var(--space-4);">
+                <a href="#" class="btn btn-primary btn-sm">View Live Site</a>
+                <a href="#" class="btn btn-secondary btn-sm">View Code</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 4: Healthcare Portal -->
+          <article class="card" id="healthcare-portal">
+            <div class="card-image">
+              <img 
+                src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 225' fill='%23e2e8f0'%3E%3Crect width='400' height='225'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' fill='%234a5568' font-family='system-ui' font-size='16'%3EHealthcare Portal%3C/text%3E%3C/svg%3E"
+                alt="Healthcare portal showing patient dashboard with appointment scheduling, medical records, and secure messaging"
+                width="400"
+                height="225"
+                loading="lazy"
+              >
+            </div>
+            <div class="card-content">
+              <h3 class="card-title">Healthcare Portal</h3>
+              <p class="card-description">
+                HIPAA-compliant patient portal with appointment scheduling, 
+                secure messaging, medical records access, and telehealth integration. 
+                Accessibility was critical for serving diverse patient populations.
+              </p>
+              <h4 class="sr-only">Technologies used</h4>
+              <div class="tags">
+                <span class="tag">React</span>
+                <span class="tag">Node.js</span>
+                <span class="tag">MongoDB</span>
+                <span class="tag">WebRTC</span>
+              </div>
+              <h4 class="sr-only">Project highlights</h4>
+              <ul style="margin-top: var(--space-4); font-size: var(--font-size-sm); color: var(--color-text-secondary);">
+                <li>HIPAA compliant</li>
+                <li>Screen reader optimized</li>
+                <li>Multi-factor authentication</li>
+                <li>Telehealth video calls</li>
+              </ul>
+              <div style="margin-top: var(--space-4); display: flex; gap: var(--space-4);">
+                <a href="#" class="btn btn-primary btn-sm">Case Study</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 5: Learning Platform -->
+          <article class="card" id="learning-platform">
+            <div class="card-image">
+              <img 
+                src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 225' fill='%23e2e8f0'%3E%3Crect width='400' height='225'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' fill='%234a5568' font-family='system-ui' font-size='16'%3ELearning Platform%3C/text%3E%3C/svg%3E"
+                alt="Online learning platform showing course catalog, video player with captions, and progress tracking dashboard"
+                width="400"
+                height="225"
+                loading="lazy"
+              >
+            </div>
+            <div class="card-content">
+              <h3 class="card-title">Learning Platform</h3>
+              <p class="card-description">
+                Educational platform with video courses, interactive quizzes, 
+                progress tracking, and certification system. Features closed 
+                captions and transcript support for all video content.
+              </p>
+              <h4 class="sr-only">Technologies used</h4>
+              <div class="tags">
+                <span class="tag">Next.js</span>
+                <span class="tag">GraphQL</span>
+                <span class="tag">PostgreSQL</span>
+                <span class="tag">AWS</span>
+              </div>
+              <h4 class="sr-only">Project highlights</h4>
+              <ul style="margin-top: var(--space-4); font-size: var(--font-size-sm); color: var(--color-text-secondary);">
+                <li>Closed captions on all videos</li>
+                <li>Keyboard-accessible video player</li>
+                <li>Progress persistence</li>
+                <li>Certificate generation</li>
+              </ul>
+              <div style="margin-top: var(--space-4); display: flex; gap: var(--space-4);">
+                <a href="#" class="btn btn-primary btn-sm">View Live Site</a>
+                <a href="#" class="btn btn-secondary btn-sm">View Code</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 6: Accessibility Toolkit -->
+          <article class="card" id="accessibility-toolkit">
+            <div class="card-image">
+              <img 
+                src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 225' fill='%23e2e8f0'%3E%3Crect width='400' height='225'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' fill='%234a5568' font-family='system-ui' font-size='16'%3EAccessibility Toolkit%3C/text%3E%3C/svg%3E"
+                alt="Accessibility testing toolkit interface showing color contrast checker, ARIA validator, and accessibility audit results"
+                width="400"
+                height="225"
+                loading="lazy"
+              >
+            </div>
+            <div class="card-content">
+              <h3 class="card-title">Accessibility Toolkit</h3>
+              <p class="card-description">
+                Open-source toolkit for developers to test and improve web 
+                accessibility. Includes color contrast checker, ARIA validator, 
+                keyboard navigation tester, and automated audit tools.
+              </p>
+              <h4 class="sr-only">Technologies used</h4>
+              <div class="tags">
+                <span class="tag">TypeScript</span>
+                <span class="tag">React</span>
+                <span class="tag">axe-core</span>
+                <span class="tag">Chrome Extension</span>
+              </div>
+              <h4 class="sr-only">Project highlights</h4>
+              <ul style="margin-top: var(--space-4); font-size: var(--font-size-sm); color: var(--color-text-secondary);">
+                <li>Open source (500+ stars)</li>
+                <li>Browser extension</li>
+                <li>CLI tool available</li>
+                <li>CI/CD integration</li>
+              </ul>
+              <div style="margin-top: var(--space-4); display: flex; gap: var(--space-4);">
+                <a href="#" class="btn btn-primary btn-sm">Try It Now</a>
+                <a href="#" class="btn btn-secondary btn-sm">View on GitHub</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section" style="background-color: var(--color-surface);" aria-labelledby="cta-title">
+      <div class="container text-center">
+        <h2 id="cta-title">Have a Project in Mind?</h2>
+        <p style="color: var(--color-text-secondary); max-width: 50ch; margin: 0 auto var(--space-8);">
+          I'm always looking for new challenges and opportunities to create 
+          accessible, impactful web experiences.
+        </p>
+        <a href="contact.html" class="btn btn-primary btn-lg">Let's Talk</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-grid">
+        <div class="footer-section">
+          <h2>Alex Chen</h2>
+          <p class="footer-description">
+            Full-stack developer and UI designer creating accessible, 
+            performant web experiences.
+          </p>
+          <div class="social-links">
+            <a href="https://github.com/alexchen" class="social-link" aria-label="GitHub profile (opens in new tab)" target="_blank" rel="noopener noreferrer">
+              <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+              </svg>
+            </a>
+            <a href="https://linkedin.com/in/alexchen" class="social-link" aria-label="LinkedIn profile (opens in new tab)" target="_blank" rel="noopener noreferrer">
+              <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+              </svg>
+            </a>
+            <a href="https://twitter.com/alexchen" class="social-link" aria-label="Twitter profile (opens in new tab)" target="_blank" rel="noopener noreferrer">
+              <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+        
+        <nav class="footer-section" aria-label="Footer navigation">
+          <h2>Navigation</h2>
+          <ul class="footer-nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        
+        <div class="footer-section">
+          <h2>Projects</h2>
+          <ul class="footer-nav">
+            <li><a href="#ecommerce-platform">E-Commerce Platform</a></li>
+            <li><a href="#task-management">Task Management</a></li>
+            <li><a href="#weather-dashboard">Weather Dashboard</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-section">
+          <h2>Contact</h2>
+          <ul class="footer-nav">
+            <li><a href="mailto:hello@alexchen.dev">hello@alexchen.dev</a></li>
+            <li>San Francisco, CA</li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p class="footer-copyright">
+          &copy; <span class="current-year">2024</span> Alex Chen. All rights reserved.
+        </p>
+        <p><a href="#main-content">Back to top</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
